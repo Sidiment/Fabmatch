@@ -1,0 +1,92 @@
+[
+  {
+    "id": "pillow-12x17",
+    "name": "12 x 17 in pillow cover",
+    "unit": "pillow covers",
+    "sizeStatus": "confirmed by Lisa Hilbert",
+    "pieces": [
+      {
+        "label": "Front and back panels",
+        "cutWidth_in": 13,
+        "cutLength_in": 18,
+        "countPerUnit": 2
+      }
+    ]
+  },
+  {
+    "id": "pillow-18x18",
+    "name": "18 x 18 in pillow cover",
+    "unit": "pillow covers",
+    "sizeStatus": "confirmed by Lisa Hilbert",
+    "pieces": [
+      {
+        "label": "Front and back panels",
+        "cutWidth_in": 19,
+        "cutLength_in": 19,
+        "countPerUnit": 2
+      }
+    ]
+  },
+  {
+    "id": "art-panel-24x36",
+    "name": "24 x 36 in stretched art panel",
+    "unit": "panels",
+    "sizeStatus": "placeholder, to be confirmed",
+    "pieces": [
+      {
+        "label": "Stretched panel",
+        "cutWidth_in": 30,
+        "cutLength_in": 42,
+        "countPerUnit": 1
+      }
+    ]
+  },
+  {
+    "id": "art-panel-24x48",
+    "name": "24 x 48 in stretched art panel",
+    "unit": "panels",
+    "sizeStatus": "placeholder, to be confirmed",
+    "pieces": [
+      {
+        "label": "Stretched panel",
+        "cutWidth_in": 30,
+        "cutLength_in": 54,
+        "countPerUnit": 1
+      }
+    ]
+  },
+  {
+    "id": "art-triptych-3x24x48",
+    "name": "Triptych, three 24 x 48 in panels",
+    "unit": "triptychs",
+    "sizeStatus": "placeholder, to be confirmed",
+    "pieces": [
+      {
+        "label": "Stretched panels",
+        "cutWidth_in": 30,
+        "cutLength_in": 54,
+        "countPerUnit": 3
+      }
+    ]
+  },
+  {
+    "id": "bolster-8x24",
+    "name": "8 in diameter x 24 in bolster cover",
+    "unit": "bolster covers",
+    "sizeStatus": "placeholder, to be confirmed",
+    "pieces": [
+      {
+        "label": "Body",
+        "cutWidth_in": 25,
+        "cutLength_in": 26.13,
+        "countPerUnit": 1
+      },
+      {
+        "label": "End caps",
+        "cutWidth_in": 9,
+        "cutLength_in": 9,
+        "countPerUnit": 2
+      }
+    ]
+  }
+]

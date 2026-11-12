@@ -1,0 +1,53 @@
+/*
+ * Motion. Minimal, functional, and off entirely under prefers-reduced-motion,
+ * as the brand guide asks. Durations live in tokens so every effect stays in step.
+ */
+:root {
+  --fm-motion-fast: 150ms;
+  --fm-motion-base: 220ms;
+  --fm-ease-out: cubic-bezier(.2, .7, .2, 1);
+  --fm-lift-shadow: 0 6px 18px rgba(22, 34, 59, .10);
+}
+
+/* Hover and focus states ease instead of snapping. */
+a, .btn, .pill, .chip, .active-chip, .search__go, .site-nav a,
+.lot-card, .apps__tile, .palette__family, .toast__undo {
+  transition:
+    color var(--fm-motion-fast) var(--fm-ease-out),
+    background-color var(--fm-motion-fast) var(--fm-ease-out),
+    border-color var(--fm-motion-fast) var(--fm-ease-out),
+    box-shadow var(--fm-motion-fast) var(--fm-ease-out),
+    transform var(--fm-motion-fast) var(--fm-ease-out);
+}
+
+/* Lot cards and tiles lift slightly; the texture image eases in a touch closer. */
+.lot-card:hover, .apps__tile:hover, .palette__family:hover { transform: translateY(-2px); box-shadow: var(--fm-lift-shadow); }
+.lot-card__photo img { transition: transform var(--fm-motion-base) var(--fm-ease-out); }
+.lot-card:hover .lot-card__photo img { transform: scale(1.04); }
+
+/* Pressed buttons settle back a hair. */
+.btn:active, .pill:active { transform: translateY(1px); }
+
+/* Pages rise in on a route change. app.js adds .page-enter to the fresh page; filter updates skip it. */
+@keyframes fm-page-enter {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+.page-enter { animation: fm-page-enter var(--fm-motion-base) var(--fm-ease-out) both; }
+
+/* Toast slides up from the corner and fades back down on exit. */
+@keyframes fm-toast-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes fm-toast-out {
+  from { opacity: 1; transform: none; }
+  to { opacity: 0; transform: translateY(8px); }
+}
+.toast:not([hidden]) { animation: fm-toast-in var(--fm-motion-base) var(--fm-ease-out) both; }
+.toast--leaving:not([hidden]) { animation: fm-toast-out var(--fm-motion-fast) ease-in both; pointer-events: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; }
+  .lot-card:hover, .apps__tile:hover, .palette__family:hover, .lot-card:hover .lot-card__photo img, .btn:active, .pill:active { transform: none; }
+}

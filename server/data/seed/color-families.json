@@ -1,0 +1,461 @@
+{
+  "_note": "Taxonomy from the Fabmatch GIX Practicum Master Specification (12-bucket palette with Pantone TPG references and L*a*b* targets). Medium tone hex values are computed from the spec's L*a*b* targets (D65, sRGB). Light and dark tones use the same a* and b* with L* changed (see tones[].L); the tone names are proposed trade names. All hexes are approximate screen values. Pantone references are copied from the spec and were not checked. To be confirmed by the research team with physical Pantone TPG swatches.",
+  "families": [
+    {
+      "code": "BKT-01",
+      "name": "White",
+      "fullName": "Warm White / Ivory",
+      "pantoneReference": "11-0601 TPG",
+      "labTarget": {
+        "L": 92,
+        "a": 0,
+        "b": 5
+      },
+      "deltaEThreshold": null,
+      "hex": "#ECE8DE",
+      "shades": [
+        "Chalk",
+        "Ivory",
+        "Cream"
+      ],
+      "tones": [
+        {
+          "tone": "Light",
+          "name": "Chalk",
+          "L": 96,
+          "hex": "#F8F3EA"
+        },
+        {
+          "tone": "Medium",
+          "name": "Ivory",
+          "L": 92,
+          "hex": "#ECE8DE"
+        },
+        {
+          "tone": "Dark",
+          "name": "Cream",
+          "L": 86,
+          "hex": "#DBD7CE"
+        }
+      ]
+    },
+    {
+      "code": "BKT-02",
+      "name": "Beige",
+      "fullName": "Beige / Oatmeal",
+      "pantoneReference": "14-1107 TPG",
+      "labTarget": {
+        "L": 78,
+        "a": 3,
+        "b": 14
+      },
+      "deltaEThreshold": null,
+      "hex": "#D1BEA7",
+      "shades": [
+        "Linen",
+        "Oatmeal",
+        "Mushroom"
+      ],
+      "tones": [
+        {
+          "tone": "Light",
+          "name": "Linen",
+          "L": 86,
+          "hex": "#E8D4BD"
+        },
+        {
+          "tone": "Medium",
+          "name": "Oatmeal",
+          "L": 78,
+          "hex": "#D1BEA7"
+        },
+        {
+          "tone": "Dark",
+          "name": "Mushroom",
+          "L": 68,
+          "hex": "#B5A38D"
+        }
+      ]
+    },
+    {
+      "code": "BKT-03",
+      "name": "Camel",
+      "fullName": "Camel / Warm Ochre",
+      "pantoneReference": "16-1140 TPG",
+      "labTarget": {
+        "L": 62,
+        "a": 12,
+        "b": 36
+      },
+      "deltaEThreshold": null,
+      "hex": "#BD8D56",
+      "shades": [
+        "Wheat",
+        "Camel",
+        "Ochre"
+      ],
+      "tones": [
+        {
+          "tone": "Light",
+          "name": "Wheat",
+          "L": 72,
+          "hex": "#DAA76F"
+        },
+        {
+          "tone": "Medium",
+          "name": "Camel",
+          "L": 62,
+          "hex": "#BD8D56"
+        },
+        {
+          "tone": "Dark",
+          "name": "Ochre",
+          "L": 52,
+          "hex": "#A0733E"
+        }
+      ]
+    },
+    {
+      "code": "BKT-04",
+      "name": "Terracotta",
+      "fullName": "Terracotta / Rust",
+      "pantoneReference": "18-1440 TPG",
+      "labTarget": {
+        "L": 46,
+        "a": 32,
+        "b": 28
+      },
+      "deltaEThreshold": null,
+      "hex": "#A85540",
+      "shades": [
+        "Apricot",
+        "Terracotta",
+        "Rust"
+      ],
+      "tones": [
+        {
+          "tone": "Light",
+          "name": "Apricot",
+          "L": 58,
+          "hex": "#CB745C"
+        },
+        {
+          "tone": "Medium",
+          "name": "Terracotta",
+          "L": 46,
+          "hex": "#A85540"
+        },
+        {
+          "tone": "Dark",
+          "name": "Rust",
+          "L": 36,
+          "hex": "#8B3D29"
+        }
+      ]
+    },
+    {
+      "code": "BKT-05",
+      "name": "Burgundy",
+      "fullName": "Burgundy / Deep Wine",
+      "pantoneReference": "19-1627 TPG",
+      "labTarget": {
+        "L": 30,
+        "a": 26,
+        "b": 10
+      },
+      "deltaEThreshold": null,
+      "hex": "#6F3538",
+      "shades": [
+        "Cranberry",
+        "Burgundy",
+        "Deep Wine"
+      ],
+      "tones": [
+        {
+          "tone": "Light",
+          "name": "Cranberry",
+          "L": 42,
+          "hex": "#8F5254"
+        },
+        {
+          "tone": "Medium",
+          "name": "Burgundy",
+          "L": 30,
+          "hex": "#6F3538"
+        },
+        {
+          "tone": "Dark",
+          "name": "Deep Wine",
+          "L": 20,
+          "hex": "#551E23"
+        }
+      ]
+    },
+    {
+      "code": "BKT-06",
+      "name": "Sage",
+      "fullName": "Sage / Soft Olive",
+      "pantoneReference": "15-6316 TPG",
+      "labTarget": {
+        "L": 66,
+        "a": -8,
+        "b": 14
+      },
+      "deltaEThreshold": null,
+      "hex": "#9CA487",
+      "shades": [
+        "Pale Sage",
+        "Sage",
+        "Olive"
+      ],
+      "tones": [
+        {
+          "tone": "Light",
+          "name": "Pale Sage",
+          "L": 76,
+          "hex": "#B7BFA1"
+        },
+        {
+          "tone": "Medium",
+          "name": "Sage",
+          "L": 66,
+          "hex": "#9CA487"
+        },
+        {
+          "tone": "Dark",
+          "name": "Olive",
+          "L": 56,
+          "hex": "#828A6E"
+        }
+      ]
+    },
+    {
+      "code": "BKT-07",
+      "name": "Forest",
+      "fullName": "Forest / Deep Moss",
+      "pantoneReference": "19-0312 TPG",
+      "labTarget": {
+        "L": 34,
+        "a": -6,
+        "b": 12
+      },
+      "deltaEThreshold": null,
+      "hex": "#4E523D",
+      "shades": [
+        "Moss",
+        "Forest",
+        "Spruce"
+      ],
+      "tones": [
+        {
+          "tone": "Light",
+          "name": "Moss",
+          "L": 46,
+          "hex": "#6B6F59"
+        },
+        {
+          "tone": "Medium",
+          "name": "Forest",
+          "L": 34,
+          "hex": "#4E523D"
+        },
+        {
+          "tone": "Dark",
+          "name": "Spruce",
+          "L": 24,
+          "hex": "#373B27"
+        }
+      ]
+    },
+    {
+      "code": "BKT-08",
+      "name": "Slate Blue",
+      "fullName": "Slate Blue / Chambray",
+      "pantoneReference": "16-4114 TPG",
+      "labTarget": {
+        "L": 58,
+        "a": -4,
+        "b": -12
+      },
+      "deltaEThreshold": null,
+      "hex": "#788EA0",
+      "shades": [
+        "Chambray",
+        "Slate Blue",
+        "Denim"
+      ],
+      "tones": [
+        {
+          "tone": "Light",
+          "name": "Chambray",
+          "L": 70,
+          "hex": "#97AEC0"
+        },
+        {
+          "tone": "Medium",
+          "name": "Slate Blue",
+          "L": 58,
+          "hex": "#788EA0"
+        },
+        {
+          "tone": "Dark",
+          "name": "Denim",
+          "L": 48,
+          "hex": "#5E7586"
+        }
+      ]
+    },
+    {
+      "code": "BKT-09",
+      "name": "Navy",
+      "fullName": "Navy / Midnight",
+      "pantoneReference": "19-3921 TPG",
+      "labTarget": {
+        "L": 24,
+        "a": 2,
+        "b": -18
+      },
+      "deltaEThreshold": null,
+      "hex": "#2A3954",
+      "shades": [
+        "Indigo",
+        "Navy",
+        "Midnight"
+      ],
+      "tones": [
+        {
+          "tone": "Light",
+          "name": "Indigo",
+          "L": 34,
+          "hex": "#42506C"
+        },
+        {
+          "tone": "Medium",
+          "name": "Navy",
+          "L": 24,
+          "hex": "#2A3954"
+        },
+        {
+          "tone": "Dark",
+          "name": "Midnight",
+          "L": 16,
+          "hex": "#172841"
+        }
+      ]
+    },
+    {
+      "code": "BKT-10",
+      "name": "Heather Grey",
+      "fullName": "Heather Grey / Silver",
+      "pantoneReference": "14-4102 TPG",
+      "labTarget": {
+        "L": 72,
+        "a": 0,
+        "b": -2
+      },
+      "deltaEThreshold": null,
+      "hex": "#AFB1B4",
+      "shades": [
+        "Silver",
+        "Heather Grey",
+        "Pewter"
+      ],
+      "tones": [
+        {
+          "tone": "Light",
+          "name": "Silver",
+          "L": 82,
+          "hex": "#CACCD0"
+        },
+        {
+          "tone": "Medium",
+          "name": "Heather Grey",
+          "L": 72,
+          "hex": "#AFB1B4"
+        },
+        {
+          "tone": "Dark",
+          "name": "Pewter",
+          "L": 62,
+          "hex": "#949699"
+        }
+      ]
+    },
+    {
+      "code": "BKT-11",
+      "name": "Charcoal",
+      "fullName": "Charcoal / Graphite",
+      "pantoneReference": "18-0601 TPG",
+      "labTarget": {
+        "L": 42,
+        "a": 0,
+        "b": 1
+      },
+      "deltaEThreshold": null,
+      "hex": "#646361",
+      "shades": [
+        "Graphite",
+        "Charcoal",
+        "Carbon"
+      ],
+      "tones": [
+        {
+          "tone": "Light",
+          "name": "Graphite",
+          "L": 54,
+          "hex": "#82817F"
+        },
+        {
+          "tone": "Medium",
+          "name": "Charcoal",
+          "L": 42,
+          "hex": "#646361"
+        },
+        {
+          "tone": "Dark",
+          "name": "Carbon",
+          "L": 32,
+          "hex": "#4C4B4A"
+        }
+      ]
+    },
+    {
+      "code": "BKT-12",
+      "name": "Espresso",
+      "fullName": "Espresso / Rich Walnut",
+      "pantoneReference": "19-1015 TPG",
+      "labTarget": {
+        "L": 28,
+        "a": 8,
+        "b": 12
+      },
+      "deltaEThreshold": null,
+      "hex": "#543D30",
+      "shades": [
+        "Mocha",
+        "Walnut",
+        "Espresso"
+      ],
+      "tones": [
+        {
+          "tone": "Light",
+          "name": "Mocha",
+          "L": 40,
+          "hex": "#72594B"
+        },
+        {
+          "tone": "Medium",
+          "name": "Walnut",
+          "L": 28,
+          "hex": "#543D30"
+        },
+        {
+          "tone": "Dark",
+          "name": "Espresso",
+          "L": 18,
+          "hex": "#3C271B"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "fabmatch-site",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Fabmatch: reclaimed textiles, ready to specify. Lot listing site built from the Interface Handoff 5.0.",
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c blue,magenta \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "node --watch-path=server --watch-path=shared server/index.js",
+    "dev:web": "vite",
+    "build": "vite build",
+    "start": "NODE_ENV=production node server/index.js",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@fontsource/inter": "^5.1.0",
+    "@fontsource/quicksand": "^5.1.0",
+    "@vitest/coverage-v8": "^2.1.8",
+    "concurrently": "^10.0.6",
+    "jsdom": "^25.0.1",
+    "supertest": "^7.3.1",
+    "vite": "^6.0.7",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.2",
+    "helmet": "^8.3.0",
+    "zod": "^4.6.7"
+  },
+  "engines": {
+    "node": ">=20.11"
+  }
+}

@@ -1,0 +1,49 @@
+/* Fabmatch design tokens. Source: Brand Guidelines v1.0 and the Interface Guide, section 7.
+   Approved values come from the brand guidelines. Proposed values need approval (guide, section 12). */
+:root {
+  /* Brand (approved) */
+  --fm-ink: #16223B;
+  --fm-clay: #C4623F;
+  --fm-taupe: #F4EFE7;
+  --fm-white: #FFFFFF;
+  --fm-ink-2: #22334F;
+  --fm-ink-3: #2F4463;
+  --fm-ink-4: #3C5578;
+
+  /* Functional (proposed) */
+  --fm-clay-deep: #A84F2F;   /* text links and error text; 5.49:1 on white */
+  --fm-muted: #5B6578;       /* secondary text */
+  --fm-line: #DDD6CB;        /* borders and dividers */
+
+  /* Type */
+  --fm-font-display: 'Quicksand', 'Trebuchet MS', sans-serif;
+  --fm-font-body: 'Inter', system-ui, sans-serif;
+
+  /* Type scale (proposed, guide 7.2) */
+  --fm-text-display: 600 40px/48px var(--fm-font-display);
+  --fm-text-h1: 600 32px/40px var(--fm-font-display);
+  --fm-text-h2: 500 24px/32px var(--fm-font-display);
+  --fm-text-h3: 500 20px/28px var(--fm-font-display);
+  --fm-text-body: 400 16px/24px var(--fm-font-body);
+  --fm-text-label: 500 14px/20px var(--fm-font-body);
+  --fm-text-caption: 400 13px/18px var(--fm-font-body);
+
+  /* Space (4 px base) */
+  --fm-space-1: 4px;  --fm-space-2: 8px;  --fm-space-3: 12px;
+  --fm-space-4: 16px; --fm-space-5: 24px; --fm-space-6: 32px;
+  --fm-space-7: 48px; --fm-space-8: 64px;
+
+  /* Shape */
+  --fm-radius-card: 16px;
+  --fm-radius-control: 999px;
+  --fm-radius-pill: 999px;
+  --fm-radius-field: 12px;
+  --fm-border: 1px solid var(--fm-line);
+
+  /* Layout (guide 7.3) */
+  --fm-content-max: 1280px;
+  --fm-reading-max: 680px;
+  --fm-gutter: 24px;
+  --fm-control-height: 48px;
+  --fm-touch-min: 44px;
+}

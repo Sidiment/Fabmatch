@@ -1,0 +1,303 @@
+{
+  "_note": "Sample data for the interface preview only. Manufacturers, lots, ratings, and yardage are not real inventory. Ratings in the product come from each manufacturer's sheet.",
+  "lots": [
+    {
+      "cat": "Upholstery",
+      "name": "Herringbone wool",
+      "fam": 2,
+      "shade": 1,
+      "mfr": "Sample Mill A",
+      "yd": 42,
+      "width": 54,
+      "fiber": "Wool",
+      "fire": [
+        "ASTM E84 Class A",
+        "CAL TB 117-2013"
+      ],
+      "rubs": 50000,
+      "nrc": null,
+      "tex": "h",
+      "directional": true,
+      "docs": [
+        "Technical data",
+        "Fiber content",
+        "Fire test report"
+      ]
+    },
+    {
+      "cat": "Upholstery",
+      "name": "Boucle wool",
+      "fam": 1,
+      "shade": 0,
+      "mfr": "Sample Mill B",
+      "yd": 28,
+      "width": 54,
+      "fiber": "Wool blend",
+      "fire": [
+        "CAL TB 117-2013"
+      ],
+      "rubs": 30000,
+      "nrc": null,
+      "tex": "b",
+      "directional": false,
+      "docs": [
+        "Technical data",
+        "Fiber content"
+      ]
+    },
+    {
+      "cat": "Drapery",
+      "name": "Twill wool",
+      "fam": 7,
+      "shade": 1,
+      "mfr": "Sample Mill A",
+      "yd": 64,
+      "width": 56,
+      "fiber": "Wool",
+      "fire": [
+        "NFPA 701"
+      ],
+      "rubs": null,
+      "nrc": null,
+      "tex": "t",
+      "directional": false,
+      "docs": [
+        "Fiber content",
+        "Fire test report"
+      ]
+    },
+    {
+      "cat": "Acoustic",
+      "name": "Felted wool",
+      "fam": 9,
+      "shade": 2,
+      "mfr": "Sample Mill C",
+      "yd": 36,
+      "width": 60,
+      "fiber": "Wool",
+      "fire": [
+        "ASTM E84 Class A"
+      ],
+      "rubs": 15000,
+      "nrc": 0.45,
+      "tex": "f",
+      "directional": false,
+      "docs": [
+        "Technical data",
+        "Fire test report",
+        "Cleaning guide"
+      ]
+    },
+    {
+      "cat": "Upholstery",
+      "name": "Plaid wool blend",
+      "fam": 3,
+      "shade": 2,
+      "mfr": "Sample Mill B",
+      "yd": 19,
+      "width": 54,
+      "fiber": "Wool blend",
+      "fire": [
+        "CAL TB 117-2013"
+      ],
+      "rubs": 30000,
+      "nrc": null,
+      "tex": "p",
+      "directional": true,
+      "docs": [
+        "Technical data"
+      ]
+    },
+    {
+      "cat": "Wallcovering",
+      "name": "Flat weave wool",
+      "fam": 7,
+      "shade": 2,
+      "mfr": "Sample Mill C",
+      "yd": 51,
+      "width": 54,
+      "fiber": "Wool",
+      "fire": [
+        "ASTM E84 Class A"
+      ],
+      "rubs": 100000,
+      "nrc": null,
+      "tex": "t",
+      "directional": false,
+      "docs": [
+        "Technical data",
+        "Fiber content",
+        "Fire test report",
+        "Cleaning guide"
+      ]
+    },
+    {
+      "cat": "Upholstery",
+      "name": "Basket weave",
+      "fam": 0,
+      "shade": 1,
+      "mfr": "Sample Mill D",
+      "yd": 24,
+      "width": 54,
+      "fiber": "Cotton blend",
+      "fire": [
+        "CAL TB 117-2013"
+      ],
+      "rubs": 30000,
+      "nrc": null,
+      "tex": "h",
+      "directional": false,
+      "docs": [
+        "Fiber content"
+      ]
+    },
+    {
+      "cat": "Acoustic",
+      "name": "Needle felt",
+      "fam": 10,
+      "shade": 1,
+      "mfr": "Sample Mill C",
+      "yd": 58,
+      "width": 60,
+      "fiber": "Polyester",
+      "fire": [
+        "ASTM E84 Class A",
+        "NFPA 260 Class 1"
+      ],
+      "rubs": 15000,
+      "nrc": 0.55,
+      "tex": "f",
+      "directional": false,
+      "docs": [
+        "Technical data",
+        "Fire test report"
+      ]
+    },
+    {
+      "cat": "Drapery",
+      "name": "Linen blend",
+      "fam": 2,
+      "shade": 0,
+      "mfr": "Sample Mill D",
+      "yd": 33,
+      "width": 54,
+      "fiber": "Linen blend",
+      "fire": [
+        "NFPA 701"
+      ],
+      "rubs": null,
+      "nrc": null,
+      "tex": "t",
+      "directional": false,
+      "docs": [
+        "Technical data",
+        "Fiber content"
+      ]
+    },
+    {
+      "cat": "Upholstery",
+      "name": "Tweed",
+      "fam": 5,
+      "shade": 2,
+      "mfr": "Sample Mill A",
+      "yd": 26,
+      "width": 54,
+      "fiber": "Wool",
+      "fire": [
+        "CAL TB 117-2013"
+      ],
+      "rubs": 50000,
+      "nrc": null,
+      "tex": "h",
+      "directional": true,
+      "docs": [
+        "Fiber content",
+        "Cleaning guide"
+      ]
+    },
+    {
+      "cat": "Wallcovering",
+      "name": "Textured weave",
+      "fam": 6,
+      "shade": 1,
+      "mfr": "Sample Mill B",
+      "yd": 47,
+      "width": 54,
+      "fiber": "Polyester",
+      "fire": [
+        "ASTM E84 Class A"
+      ],
+      "rubs": 100000,
+      "nrc": 0.3,
+      "tex": "t",
+      "directional": false,
+      "docs": [
+        "Technical data",
+        "Fiber content",
+        "Fire test report"
+      ]
+    },
+    {
+      "cat": "Upholstery",
+      "name": "Chenille",
+      "fam": 3,
+      "shade": 1,
+      "mfr": "Sample Mill D",
+      "yd": 21,
+      "width": 54,
+      "fiber": "Polyester",
+      "fire": [
+        "CAL TB 117-2013"
+      ],
+      "rubs": 50000,
+      "nrc": null,
+      "tex": "b",
+      "directional": false,
+      "docs": [
+        "Technical data"
+      ]
+    },
+    {
+      "cat": "Drapery",
+      "name": "Sheer weave",
+      "fam": 4,
+      "shade": 0,
+      "mfr": "Sample Mill C",
+      "yd": 30,
+      "width": 118,
+      "fiber": "Polyester",
+      "fire": [
+        "NFPA 701"
+      ],
+      "rubs": null,
+      "nrc": null,
+      "tex": "t",
+      "directional": false,
+      "docs": [
+        "Fiber content",
+        "Fire test report"
+      ]
+    },
+    {
+      "cat": "Upholstery",
+      "name": "Crepe weave",
+      "fam": 1,
+      "shade": 1,
+      "mfr": "Sample Mill A",
+      "yd": 39,
+      "width": 54,
+      "fiber": "Wool",
+      "fire": [
+        "CAL TB 117-2013"
+      ],
+      "rubs": 30000,
+      "nrc": null,
+      "tex": "h",
+      "directional": false,
+      "docs": [
+        "Technical data",
+        "Fiber content"
+      ]
+    }
+  ]
+}

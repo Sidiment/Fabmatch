@@ -1,0 +1,9 @@
+{
+  "_note": "Default allowances are assumptions to be confirmed with workrooms. Dimensions in inches.",
+  "method": "A",
+  "selvage": 1,
+  "seam": 0.5,
+  "wrap": 3,
+  "cutLoss": 10,
+  "repeat": 0
+}

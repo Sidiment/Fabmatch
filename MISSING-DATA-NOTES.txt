@@ -1,0 +1,62 @@
+FABMATCH SITE: WHAT IS MISSING FROM THE REDESIGN COLLECTIVE SAMPLES
+==================================================================
+Source: DATASET_FABRIC_SAMPLES.xlsx, sheet "Higher-End Textiles"
+Added: 91 sample pieces as lots RC-0001 to RC-0091, one per spreadsheet row, in sheet order.
+Data file: server/data/seed/redesign-collective-samples.json   Photos: public/samples/
+
+WHAT EACH SAMPLE HAS (from the spreadsheet)
+- Brand (shown as "Brand: X, from the sample label, not verified")
+- Piece size in inches, quantity in pieces, inventory code, NAICS code, photo
+- A name and title the site requires, made from the brand: "Pindler sample 48"
+
+MISSING FOR ALL 91 SAMPLES (left blank; the site shows "Not recorded")
+- Product or pattern name (the sheet has only the brand, so titles are "Brand sample N")
+- Application: upholstery, drapery, wallcovering, acoustic (category chips and Art-ready skip these lots)
+- Fiber content (fiber filter and search)
+- Color family and tone from the 12-family palette (color and tone filters skip these lots)
+- Pattern (herringbone, plaid, and so on)
+- Direction: one-way or may be turned. Until it is recorded, product estimates do NOT turn the pieces (cautious)
+- Fire rating, abrasion (double rubs), acoustic NRC
+- Documentation on file (technical data, fiber content, fire test report)
+- Verified manufacturer status (brands come from labels, so they are not counted as verified manufacturers)
+- Region (lots say "Seattle region"; the sheet does not say where the samples are)
+- Last confirmed date (cards say "Not confirmed yet"; they sort last under Newest)
+- Status: set to "In inventory" as a placeholder. Confirm whether these are still on hand.
+
+SPECIFIC ROWS TO CHECK
+- No photo in the sheet (6). The site draws a plain placeholder texture:
+    RC-0015 (sheet row 16, Schumacher)
+    RC-0024 (sheet row 25, Pindler)
+    RC-0029 (sheet row 30, Thibaut)
+    RC-0046 (sheet row 47, Pindler)
+    RC-0052 (sheet row 53, Pindler)
+    RC-0054 (sheet row 55, Pindler)
+- Brand "Unknown" (3). Titled "Sample N, brand not recorded":
+    RC-0062 (sheet row 63)
+    RC-0063 (sheet row 64)
+    RC-0064 (sheet row 65)
+- RC-0027 (sheet row 28, Thibaut): Unit column says "3 yd" but the size is 27x27 in.
+    Is this a 3 yd roll or one piece? The site treats it as one piece and shows the note on the lot page.
+- RC-0040 (sheet row 41, Thibaut): Unit column says "4.2 yd" but the size is 27x27 in.
+    Is this a 4.2 yd roll or one piece? The site treats it as one piece and shows the note on the lot page.
+- NAICS code is "Unknown" for 30 samples.
+- Brand spellings to check: "Thibaut" and "Thibaut Crypton" appear as two brands in the Brand filter;
+    "Stroheim (Jongomero - Salt & Pepper)" holds a pattern name in the brand cell.
+- Rows 94 to 97 ("Other textile from June 2023-June 2024") list Pieces and Rolls with no quantity or weight.
+    Nothing was imported from them.
+
+NOT SHOWN ON THE SITE YET: PRICES AND AVOIDED EMISSIONS (decision needed)
+The README rule is "no prices, holds, orders, or carbon figures until the method is verified", and that question
+was left open, so the site keeps the rule. The figures are still in the spreadsheet:
+- Price/yd and price/piece for each sample. 26 samples have price "Unknown", which makes the sheet's
+    Price/pc, Final price, and Total price cells show #VALUE!. Average price/yd in the sheet: $169.37.
+- AVOIDED EMISSIONS sheet (June 2023 to June 2024): acquired textiles 454.7 kg CO2e, pillows 293.4 kg CO2e,
+    wine bags 58.7 kg CO2e, donated textiles 2,892.2 kg CO2e. They use different factors (NZ landfill per kg vs
+    US EPA per dollar), and the EPA "Fabric" factor is marked "Not found in current EPA spreadsheet".
+    Worth settling one method before the site shows a carbon figure.
+Say the word and prices and/or an Impact section can be added.
+
+HOW TO FILL IN A MISSING ATTRIBUTE
+Edit server/data/seed/redesign-collective-samples.json only for brand, size, quantity, or photo. For the other
+attributes, edit the lot in server/.data/lots.json (fields: cat, fiber, fam, shade, tex, pattern, directional,
+fire, rubs, nrc, docs, region, lastConfirmed) and restart the server. Field formats match the FM- lots in that file.
