@@ -41,6 +41,18 @@ npm start
 Other scripts: `npm test` (Vitest; jsdom for the site, Node for the server),
 `npm run test:coverage` (80 percent thresholds), `npm run preview`.
 
+## Demo on GitHub Pages
+
+A push to `main` runs `.github/workflows/pages.yml`, which builds the static demo and publishes
+it at https://sidiment.github.io/Fabmatch/. One-time setup: repository Settings > Pages >
+Build and deployment > Source: **GitHub Actions**.
+
+The static build (`npm run build:pages`) has no API server. `scripts/export-catalog.js` writes
+the catalog, sample pieces included, to `dist/catalog.json`, and `src/lib/staticApi.js` answers
+the site's `/api` requests from it. Browsing, filters, lot pages, estimates, and projects work;
+saved lots stay in the visitor's browser. Sign-in and the contact form say they are off in the
+demo. The full site with accounts still runs with `./start.sh`.
+
 ## Backend
 
 A small Express API in `server/`. There is no database: each collection is a JSON file in the
